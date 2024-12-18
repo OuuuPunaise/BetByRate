@@ -1,0 +1,12 @@
+<!--<app-sport *ngFor="let sportElementOfArray of ListeSports" [MySport]="sportElementOfArray"></app-sport>
+<button (click)="editSport(dataItem)">{{dataItem.Nom}}</button>
+-->
+
+<tbody>
+	<tr *ngFor="let dataItem of ListeSports">
+		<td>{{dataItem.IdSport}}</td>
+		<td>
+			<button (click)="editSport(dataItem.IdSport)">{{dataItem.Nom}}</button>
+		</td>
+	</tr>
+</tbody>
